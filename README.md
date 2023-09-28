@@ -5,5 +5,5 @@
 - Tmux
 - fish
 - Starship
-- [xbanish](https://github.com/jcs/xbanish)
+- [xbanish](https://github.com/jcs/xbanish) (`xbanish -i all &` on startup)
 
