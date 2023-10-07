@@ -1,5 +1,9 @@
 # dotfiles
 
+## Clone to local machine
+
+**TODO**
+
 ## Using
 - Alacritty
 - Tmux
