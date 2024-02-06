@@ -3,7 +3,7 @@ if status is-interactive
     set fish_greeting
     set PATH "/home/berk/.local/bin/" $PATH
     set PATH "/home/berk/.cargo/bin/" $PATH
+    set PATH "/home/berk/.local/share/JetBrains/Toolbox/scripts" $PATH
     set XDG_CONFIG_HOME $HOME/.config
-    alias dotfiles_git='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
     starship init fish | source
 end
