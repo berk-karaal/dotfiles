@@ -30,8 +30,10 @@ $ cd dotfiles
 $ pwd 
 /home/berk/dotfiles
 
+# install configs under home path
 $ stow -v . --dir=/home/berk/dotfiles/home/ --target=/home/berk/
 
+# install configs under /etc
 $ sudo stow -v . --dir=/home/berk/dotfiles/etc/ --target=/etc/
 ```
 
@@ -49,7 +51,7 @@ with stow.
 
 > In this example, project folder is at this path: `/home/berk/dotfiles`
 
-1. Create and empty `myConfig.conf` file inside the project folder.
+1. Create an empty `myConfig.conf` file inside the project folder.
    
    ```
    $ mkdir /home/berk/dotfiles/home/.config/myProgram
@@ -57,11 +59,11 @@ with stow.
    ```
 
 2. Run stow command with `--adopt` option.
-   > You may want to use run this command with `-n` option first to see what will happen.
+   > You may want to run this command with `-n` option first to see what will happen.
    ```
    $ stow --adopt -v . --dir=/home/berk/dotfiles/home/ --target=/home/berk
    ```
    This command will recognize myConfig.conf file and it will notice it's not symlinked to our
    project folder (dir option). So it will first overwrite the file in the project folder, then it
-   will convert original file to a symlink which is linked to the file in our project folder.
+   will convert original file to a symlink which is linked to the overwritten file.
 
