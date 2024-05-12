@@ -37,7 +37,7 @@ TERM = "xterm-256color"
 size = 11
 
 [font.normal]
-family = "Martian Mono"
+family = "monospace" # https://github.com/alacritty/alacritty/issues/153#issuecomment-630636358
 
 [window.dimensions]
 columns = 125
