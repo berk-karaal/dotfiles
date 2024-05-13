@@ -1,0 +1,11 @@
+[include]
+	path = ~/.gitconfig_personal # name, email, signingkey
+[init]
+	defaultBranch = main
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[alias]
+	st = status
+	lo = log --oneline
