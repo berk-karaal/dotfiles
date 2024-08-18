@@ -5,7 +5,7 @@
 - [Tmux](https://github.com/tmux/tmux)
 - [fish shell](https://github.com/fish-shell/fish-shell)
 - [Starship](https://github.com/starship/starship)
-- [xbanish](https://github.com/jcs/xbanish) (`xbanish -i all &` on startup)
+- ~~[xbanish](https://github.com/jcs/xbanish) (`xbanish -i all &` on startup)~~ (I moved to Wayland, doesn't work on it :disappointed:)
 - [keyd](https://github.com/rvaiya/keyd)
 
 ---
