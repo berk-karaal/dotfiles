@@ -9,3 +9,5 @@
 [alias]
 	st = status
 	lo = log --oneline
+[core]
+	pager = less -x4
