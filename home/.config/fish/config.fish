@@ -1,3 +1,7 @@
+function starship_transient_prompt_func
+    starship module character
+end
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set fish_greeting
@@ -7,4 +11,5 @@ if status is-interactive
     set PATH "/home/berk/go/bin" $PATH
     set XDG_CONFIG_HOME $HOME/.config
     starship init fish | source
+    enable_transience
 end
