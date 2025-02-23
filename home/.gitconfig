@@ -8,6 +8,7 @@
 	gpgsign = true
 [alias]
 	st = status
+	sts = status --short
 	lo = log --oneline
 [core]
 	pager = less -x4
