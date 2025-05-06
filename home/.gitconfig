@@ -11,4 +11,12 @@
 	sts = status --short
 	lo = log --oneline
 [core]
-	pager = less -x4
+  pager = delta 
+[interactive]
+   diffFilter = delta --color-only
+[delta]
+   navigate = true
+   dark = true
+   tabs = 4
+[merge]
+   conflictstyle = zdiff3
