@@ -1,7 +1,13 @@
-right_format = """$time"""
+right_format = """$kubernetes $time"""
 
 [time]
 time_format = "%T"
 format = "🕙 $time($style) "
 style = "bright-white"
 disabled = false
+
+[kubernetes]
+disabled = false
+symbol = "☸️"
+format = '[$symbol](bright-black) [$context \(ns:$namespace\)]($style)'
+
