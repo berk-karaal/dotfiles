@@ -13,6 +13,7 @@
 	st = status
 	sts = status --short
 	lo = log --oneline
+	empty-push = !git commit --allow-empty -m 'empty commit' && git push
 [core]
   pager = delta 
 [interactive]
