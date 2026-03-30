@@ -1,29 +1,31 @@
-function starship_transient_prompt_func
-    starship module character
-end
+fish_add_path ~/bin
+fish_add_path ~/bin
+fish_add_path ~/.local/bin
+fish_add_path ~/.cargo/bin
+fish_add_path ~/.local/share/JetBrains/Toolbox/scripts
+fish_add_path /usr/local/go/bin
+fish_add_path /usr/local/bin
+fish_add_path ~/go/bin
 
-bind alt-backspace backward-kill-word
+set --export BUN_INSTALL ~/.bun
+fish_add_path $BUN_INSTALL/bin
 
-test -f ~/kubectl-aliases/.kubectl_aliases.fish && source ~/kubectl-aliases/.kubectl_aliases.fish
+set XDG_CONFIG_HOME $HOME/.config
+
+set --export ENABLE_LSP_TOOL 1
+
+set --export EDITOR /usr/local/bin/fresh
+
+loadenv ~/.claude/env-otel
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set fish_greeting
-    set PATH "~/bin/" $PATH
-    set PATH "~/bin" $PATH
-    set PATH "~/.local/bin/" $PATH
-    set PATH "~/.cargo/bin/" $PATH
-    set PATH "~/.local/share/JetBrains/Toolbox/scripts" $PATH
-    set PATH "/usr/local/go/bin" $PATH
-	set PATH "~/go/bin" $PATH
-    set XDG_CONFIG_HOME $HOME/.config
+
+    # Binding & Aliases
+    bind alt-backspace backward-kill-word
+    test -f ~/kubectl-aliases/.kubectl_aliases.fish && source ~/kubectl-aliases/.kubectl_aliases.fish
+
     starship init fish | source
     enable_transience
 end
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-
-set --export ENABLE_LSP_TOOL 1
-
