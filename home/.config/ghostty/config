@@ -1,5 +1,5 @@
 shell-integration-features = sudo,ssh-env
 
 font-family = MartianMono Nerd Font Mono
-font-size = 12
+font-size = 13
 font-feature = -calt,-liga,-dlig
