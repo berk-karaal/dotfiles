@@ -16,7 +16,7 @@ set --export ENABLE_LSP_TOOL 1
 
 set --export EDITOR /usr/local/bin/fresh
 
-loadenv ~/.claude/env-otel
+test -f ~/.claude/env-otel && loadenv ~/.claude/env-otel
 
 if status is-interactive
     # Commands to run in interactive sessions can go here

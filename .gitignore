@@ -1,0 +1,9 @@
+# fish: fisher owns installed plugin files; git tracks only the manifest (fish_plugins).
+# functions/, completions/ and conf.d/ are ignored wholesale — to track a file of our
+# own there, add a !-negation line for it below.
+home/.config/fish/fish_variables
+home/.config/fish/functions/*
+!home/.config/fish/functions/take.fish
+home/.config/fish/completions/*
+home/.config/fish/conf.d/*
+!home/.config/fish/conf.d/myabbrs.fish
