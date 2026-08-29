@@ -14,7 +14,7 @@ set XDG_CONFIG_HOME $HOME/.config
 
 set --export ENABLE_LSP_TOOL 1
 
-set --export EDITOR /usr/local/bin/fresh
+set --export EDITOR fresh
 
 test -f ~/.claude/env-otel && loadenv ~/.claude/env-otel
 
