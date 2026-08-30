@@ -1,0 +1,17 @@
+# Captured 2026-08-29 from Fedora 44, GNOME Shell 50.4 (Wayland).
+# Extension versions at capture: see ../../extensions.md
+[/]
+colored-player-icon=true
+elements-order=['ICON', 'LABEL', 'CONTROLS']
+extension-index=uint32 2
+extension-position='Left'
+fixed-label-width=false
+hide-media-notification=true
+label-width=uint32 120
+labels-order=['TITLE', '-', 'ARTIST']
+mouse-action-middle='PLAY_PAUSE'
+show-control-icons-next=true
+show-control-icons-play=true
+show-control-icons-seek-backward=false
+show-control-icons-seek-forward=false
+show-player-icon=true

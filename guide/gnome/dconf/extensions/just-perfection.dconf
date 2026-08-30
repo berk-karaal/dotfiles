@@ -1,0 +1,19 @@
+# Captured 2026-08-29 from Fedora 44, GNOME Shell 50.4 (Wayland).
+# Extension versions at capture: see ../../extensions.md
+[/]
+animation=5
+clock-menu=true
+dash=true
+dash-separator=true
+events-button=true
+panel-icon-size=0
+panel-in-overview=true
+panel-size=25
+ripple-box=true
+screen-recording-indicator=true
+show-apps-button=true
+support-notifier-showed-time=uint64 1738564529051
+support-notifier-showed-version=36
+theme=false
+weather=false
+workspace-wrap-around=false

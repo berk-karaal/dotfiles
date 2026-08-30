@@ -1,5 +1,7 @@
 # dotfiles
 
+Setting up a new machine? Start at [guide/NEW-MACHINE-GUIDE.md](guide/NEW-MACHINE-GUIDE.md).
+
 ## Softwares I currently use
 - [Alacritty](https://github.com/alacritty/alacritty)
 - [Tmux](https://github.com/tmux/tmux)

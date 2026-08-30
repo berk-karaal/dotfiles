@@ -1,0 +1,21 @@
+# Captured 2026-08-29 from Fedora 44, GNOME Shell 50.4 (Wayland).
+# Extension versions at capture: see ../../extensions.md
+[/]
+always-show-notifications=false
+desaturation-factor=1.3877787807814457e-17
+favorites=false
+hide-dash=false
+icon-size=18
+icon-style='REGULAR'
+intellihide=false
+isolate-workspaces=true
+main-panel-height=(false, 28)
+multi-window-indicator-style='MULTI_DASH'
+position-offset=2
+prefs-visible-page=''
+show-apps-button=(false, 0)
+show-panel-activities-button=true
+show-running-apps=true
+show-weather-by-clock='OFF'
+taskbar-spacing=0
+update-notifier-project-version=39

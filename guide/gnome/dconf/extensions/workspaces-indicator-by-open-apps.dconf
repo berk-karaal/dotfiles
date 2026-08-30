@@ -1,0 +1,23 @@
+# Captured 2026-08-29 from Fedora 44, GNOME Shell 50.4 (Wayland).
+# Extension versions at capture: see ../../extensions.md
+[/]
+apps-all-desaturate=false
+apps-inactive-effect='REDUCE OPACITY'
+apps-minimized-effect='DESATURATE'
+apps-symbolic-icons=false
+hide-activities-button=true
+icons-group='OFF'
+indicator-color='rgb(108,108,108)'
+indicator-hide-empty=false
+indicator-round-borders=true
+indicator-show-active-workspace=true
+indicator-show-focused-app=true
+indicator-show-indexes=true
+indicator-swap-position=false
+indicator-use-custom-names=false
+position-in-panel='LEFT'
+position-index=1
+scroll-enable=false
+size-app-icon=20
+size-labels=12
+spacing-workspace-left=2

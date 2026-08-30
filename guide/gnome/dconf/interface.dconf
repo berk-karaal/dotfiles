@@ -1,0 +1,12 @@
+# Captured 2026-08-29 from Fedora 44, GNOME Shell 50.4 (Wayland).
+# Extension versions at capture: see ../extensions.md
+[/]
+accent-color='blue'
+clock-format='24h'
+clock-show-weekday=true
+color-scheme='prefer-dark'
+enable-animations=true
+enable-hot-corners=false
+gtk-enable-primary-paste=false
+show-battery-percentage=true
+toolkit-accessibility=false

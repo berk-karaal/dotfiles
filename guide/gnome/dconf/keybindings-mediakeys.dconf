@@ -1,0 +1,11 @@
+# Captured 2026-08-29 from Fedora 44, GNOME Shell 50.4 (Wayland).
+# Extension versions at capture: see ../extensions.md
+[/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+home=['<Super>e']
+www=['<Super>b']
+
+[custom-keybindings/custom0]
+binding='<Super>Return'
+command='ghostty'
+name='Ghostty'
