@@ -106,6 +106,8 @@ These were dumped from the verified-working Fedora 44 / GNOME 50 setup.
      If e.g.o lags (Media Controls did), either wait, build from source, or patch
      metadata and accept it may be disabled.
    - Leave out extensions that were "enabled but not installed" on the old machine.
+   - `window-merge@berk-karaal` is not on e.g.o — install it from its GitHub release
+     zip with `gnome-extensions install --force` (steps in `gnome/extensions.md`).
 2. **Log out and back in** (Wayland can't restart the shell).
 3. Enable all extensions, confirm each reports `State: ACTIVE`.
 4. `dconf load` the targeted files **in the bundle's documented order** — extensions
@@ -122,6 +124,7 @@ These were dumped from the verified-working Fedora 44 / GNOME 50 setup.
 ## 8. Verify
 
 - Super+Return → terminal · Super+1..6 → workspaces · Super+T → gTile · Alt+Tab → windows
+- Super+M → Window Merge tabs the focused app (the message tray must not take it)
 - Panel: taskbar, workspace indicator, Astra Monitor with a real disk
 - keyd: CapsLock=backspace, AltGr+IJKL navigation, TR layout swaps
 - Dark theme, 6 workspaces, touchpad natural scroll

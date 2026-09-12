@@ -1,6 +1,6 @@
 # GNOME Extensions
 
-**Captured 2026-08-29 · Fedora 44 · GNOME Shell 50.4 · Wayland.**
+**Captured 2026-09-12 · Fedora 44 · GNOME Shell 50.4 · Wayland.**
 The versions below are what the `dconf/extensions/` settings dumps were taken from. On
 the next setup, newer versions will normally be installed — the settings usually carry
 over, but if an extension has jumped a major version (or the shell is several releases
@@ -22,6 +22,7 @@ dconf that linger for years.
 | Media Controls | `mediacontrols@cliffniff.github.com` | 47 (2.4.4) † | `mediacontrols.dconf` | Now-playing info + player controls in the panel | <https://github.com/sakithb/media-controls> |
 | Workspaces indicator by open apps | `workspaces-by-open-apps@favo02.github.com` | 27 | `workspaces-indicator-by-open-apps.dconf` | Workspace indicator on the left of the panel (hides Activities) | <https://github.com/Favo02/workspaces-by-open-apps> |
 | Caffeine | `caffeine@patapon.info` | 60 | `caffeine.dconf` | Inhibit sleep/screensaver on demand | <https://github.com/eonpatapon/gnome-shell-extension-caffeine> |
+| Window Merge | `window-merge@berk-karaal` | — | — (defaults) | Merge every window of an app into one tabbed frame, Super+M | <https://github.com/berk-karaal/gnome-window-merge> |
 | Steal my focus window | `steal-my-focus-window@steal-my-focus-window` | 7 | — (no settings) | Focus new windows instead of the "is ready" notification | <https://github.com/v-dimitrov/gnome-shell-extension-stealmyfocus> |
 
 † Media Controls v47 officially declares shell ≤49; its `metadata.json` was hand-patched
@@ -30,6 +31,13 @@ instead of repeating the patch.
 
 Install each by UUID (e.g. `gext install <uuid>`) and let the tool fetch the build
 matching the running shell — never pin these versions.
+
+**Window Merge** is published only on GitHub, so `gext` cannot fetch it. Take
+`window-merge@berk-karaal.zip` from the repo's latest release and run
+`gnome-extensions install --force window-merge@berk-karaal.zip`, then log out and back
+in before `gnome-extensions enable window-merge@berk-karaal`. It binds Super+M and
+Super+Shift+M; GNOME hands Super+M to the message tray by default, which is why
+`dconf/keybindings-shell.dconf` sets `toggle-message-tray` to `['<Super>v']` alone.
 
 Machine-specific: `astra-monitor.dconf` contains `storage-main` (a disk/partition ID) —
 re-pick it on new hardware or after repartitioning.

@@ -1,4 +1,4 @@
-# Captured 2026-08-29 from Fedora 44, GNOME Shell 50.4 (Wayland).
+# Captured 2026-09-12 from Fedora 44, GNOME Shell 50.4 (Wayland).
 # Extension versions at capture: see ../extensions.md
 [/]
 switch-to-application-1=@as []
@@ -10,3 +10,4 @@ switch-to-application-6=@as []
 switch-to-application-7=@as []
 switch-to-application-8=@as []
 switch-to-application-9=@as []
+toggle-message-tray=['<Super>v']
