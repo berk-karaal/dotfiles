@@ -1,0 +1,11 @@
+onboarding = false
+
+[ui]
+status_indicators = "symbols"
+prompt_new_tab_name = false
+
+[ui.sound]
+enabled = true
+
+[ui.toast]
+delivery = "system"

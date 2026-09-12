@@ -9,6 +9,7 @@ Setting up a new machine? Start at [guide/NEW-MACHINE-GUIDE.md](guide/NEW-MACHIN
 - [Starship](https://github.com/starship/starship)
 - ~~[xbanish](https://github.com/jcs/xbanish) (`xbanish -i all &` on startup)~~ (I moved to Wayland, doesn't work on it :disappointed:)
 - [keyd](https://github.com/rvaiya/keyd)
+- [herdr](https://herdr.dev/)
 
 ---
 
