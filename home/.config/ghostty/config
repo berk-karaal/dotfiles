@@ -1,5 +1,8 @@
 shell-integration-features = sudo,ssh-env,ssh-terminfo
 
+keybind = ctrl+tab=esc:[27;5;9~
+keybind = ctrl+shift+tab=esc:[27;6;9~
+
 font-family = MartianMono Nerd Font Mono
 font-size = 13
 font-feature = -calt,-liga,-dlig

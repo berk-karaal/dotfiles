@@ -1,5 +1,9 @@
 onboarding = false
 
+[keys]
+next_tab = ["prefix+n", "ctrl+tab"]
+previous_tab = ["prefix+p", "ctrl+shift+tab"]
+
 [ui]
 status_indicators = "symbols"
 prompt_new_tab_name = false
