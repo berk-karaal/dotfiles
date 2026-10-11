@@ -11,3 +11,7 @@ home/.config/fish/conf.d/*
 
 # mise: global tools differ per machine; install with `mise use -g`.
 home/.config/mise/
+
+# herdr: only config.toml is ours; the rest is runtime state (logs, sockets, session).
+home/.config/herdr/*
+!home/.config/herdr/config.toml
