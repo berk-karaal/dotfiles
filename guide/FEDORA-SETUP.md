@@ -1,4 +1,4 @@
-# New Linux Machine Setup Guide
+# Fedora Setup Guide
 
 ## 1. System base
 

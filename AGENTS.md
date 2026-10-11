@@ -12,7 +12,7 @@ MUST read @README.md first before anything else.
 
 - `home/` → stowed into `~` (`stow . --dir=$HOME/dotfiles/home --target=$HOME`)
 - `etc/` → stowed into `/etc` with sudo (Linux only: keyd, dnf)
-- `guide/NEW-MACHINE-GUIDE.md` → how I set up a new machine; keep it in sync when setup steps change
+- `guide/FEDORA-SETUP.md` → how I set up a new Fedora machine; keep it in sync when setup steps change
 - `guide/gnome/` → GNOME extension list and dconf dumps (Linux only)
 
 Some configs are platform-specific: `karabiner/` is macOS only; `etc/` and the GNOME files are Linux only. But they can be present on the other platform without harm.

@@ -1,6 +1,6 @@
 # dotfiles
 
-Setting up a new machine? Start at [guide/NEW-MACHINE-GUIDE.md](guide/NEW-MACHINE-GUIDE.md).
+Setting up a new Fedora machine? Start at [guide/FEDORA-SETUP.md](guide/FEDORA-SETUP.md).
 
 ## Softwares I currently use
 - [Alacritty](https://github.com/alacritty/alacritty)
