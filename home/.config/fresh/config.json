@@ -1,3 +1,9 @@
 {
-  "theme": "builtin://dark"
+  "theme": "builtin://dark",
+  "file_explorer": {
+    "show_hidden": true
+  },
+  "editor": {
+    "line_wrap": true
+  }
 }
