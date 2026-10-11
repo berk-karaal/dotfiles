@@ -83,8 +83,8 @@ repo when they run one, the official installer/tarball for fast-moving toolchain
   `mise activate` line the installer suggests**. On macOS `brew install mise`
   drops its own fish snippet in `vendor_conf.d/`; ours is named
   `mise-activate.fish` to shadow it so activation happens exactly once.
-  Global tool versions come from `home/.config/mise/config.toml` in this repo —
-  after stowing, just run `mise install`.
+  Global tools are per machine and not tracked here — add them with
+  `mise use -g <tool>` (e.g. `mise use -g node@lts python@3.13`).
   Per-project pins go in a `mise.toml` (shared) or `mise.local.toml` (personal,
   gitignore it). Python venvs are uv's job: `uv venv` + `uv pip install`, with
   `_.python.venv` in the project's mise config to auto-activate on `cd`.

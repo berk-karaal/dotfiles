@@ -8,3 +8,6 @@ home/.config/fish/completions/*
 home/.config/fish/conf.d/*
 !home/.config/fish/conf.d/myabbrs.fish
 !home/.config/fish/conf.d/mise-activate.fish
+
+# mise: global tools differ per machine; install with `mise use -g`.
+home/.config/mise/
