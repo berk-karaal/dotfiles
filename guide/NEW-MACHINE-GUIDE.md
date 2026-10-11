@@ -33,14 +33,15 @@
 
 ## 3. Git setup
 
-The stowed `.gitconfig` includes `~/.gitconfig_personal` (name, email, SSH signing key)
+The stowed `.gitconfig` includes `~/.gitconfig.local` (name, email, SSH signing key,
+plus any machine-specific settings such as work `includeIf`s)
 — a **machine-local file that is never committed**, so it must be recreated on every
 new machine. Until it exists, `git commit` fails (no identity, and commit signing is on)
 and `git push` fails too (GitHub https URLs are rewritten to SSH).
 
 Follow <https://berkkaraal.com/notes/git/setup/> — it walks through generating the
 ed25519 SSH key, adding it to GitHub as both an **authentication key** and a
-**signing key**, and testing the connection. Then create `~/.gitconfig_personal`
+**signing key**, and testing the connection. Then create `~/.gitconfig.local`
 with `user.name`, `user.email` and `user.signingkey`.
 
 ## 4. Editors & apps
