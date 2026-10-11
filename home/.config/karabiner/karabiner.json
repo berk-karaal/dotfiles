@@ -21,6 +21,19 @@
                         ]
                     },
                     {
+                        "description": "Disable Right Command + Q",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "key_code": "vk_none" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Change right_command+ijkl & uo",
                         "manipulators": [
                             {
