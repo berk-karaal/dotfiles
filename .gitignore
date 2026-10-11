@@ -15,3 +15,7 @@ home/.config/mise/
 # herdr: only config.toml is ours; the rest is runtime state (logs, sockets, session).
 home/.config/herdr/*
 !home/.config/herdr/config.toml
+
+# fresh: only config.json is ours; tsconfig.json and types/ are generated for init.ts.
+home/.config/fresh/*
+!home/.config/fresh/config.json
