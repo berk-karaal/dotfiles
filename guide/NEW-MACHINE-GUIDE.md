@@ -76,11 +76,18 @@ repo when they run one, the official installer/tarball for fast-moving toolchain
 - **bun** — official script: `curl -fsSL https://bun.com/install | bash` → `~/.bun`
   (`BUN_INSTALL` already set in config.fish).
 - **uv** — Astral's standalone installer: `curl -LsSf https://astral.sh/uv/install.sh | sh`.
-- **node** — **fnm** (<https://github.com/Schniz/fnm>): one shared version store, so
-  fish and bash see the same node versions. Install with the official script
-  **plus `--skip-shell`** — the shell hooks already live in the dotfiles repo
-  (`conf.d/fnm.fish` for fish, `.bashrc` for bash).
-  Then `fnm install --lts && fnm default lts-latest`.
+- **node + python** — **mise** (<https://mise.jdx.dev>): one version manager for
+  both, shared by fish and bash. Replaced fnm and pyenv. Install from the distro
+  package or `curl https://mise.run | sh`; the shell hooks already live in this
+  repo (`conf.d/mise-activate.fish` for fish, `.bashrc` for bash), so **skip any
+  `mise activate` line the installer suggests**. On macOS `brew install mise`
+  drops its own fish snippet in `vendor_conf.d/`; ours is named
+  `mise-activate.fish` to shadow it so activation happens exactly once.
+  Global tool versions come from `home/.config/mise/config.toml` in this repo —
+  after stowing, just run `mise install`.
+  Per-project pins go in a `mise.toml` (shared) or `mise.local.toml` (personal,
+  gitignore it). Python venvs are uv's job: `uv venv` + `uv pip install`, with
+  `_.python.venv` in the project's mise config to auto-activate on `cd`.
 - Flatpak apps: Telegram.
 
 ## 6. Browser extensions

@@ -24,9 +24,5 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# fnm (Fast Node Manager) — https://github.com/Schniz/fnm
-FNM_PATH="$HOME/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-    export PATH="$FNM_PATH:$PATH"
-    eval "$(fnm env --use-on-cd --shell bash)"
-fi
+# mise (tool version manager) — https://mise.jdx.dev
+command -v mise >/dev/null && eval "$(mise activate bash)"
